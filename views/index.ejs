@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="w-full h-full bg-zinc-900 p-10 text-white">
+      <div class="nav mb-10">
+        <a class="text-blue-500 text-2xl" href="/read"
+          ><i class="ri-database-2-fill"></i
+        ></a>
+      </div>
+
+      <h1 class="text-3xl tracking-tigher mb-3">Create User</h1>
+      <form action="/create" method="post">
+        <input
+          class="px-5 py-2 border-2 rounded-md bg-transparent border-zinc-800 outline-none"
+          type="text"
+          name="name"
+          placeholder="name"
+        />
+        <input
+          class="px-5 py-2 border-2 rounded-md bg-transparent border-zinc-800 outline-none"
+          type="text"
+          name="email"
+          placeholder="email"
+        />
+        <input
+          class="px-5 py-2 border-2 rounded-md bg-transparent border-zinc-800 outline-none"
+          type="text"
+          name="imgURL"
+          placeholder="image URL"
+        />
+        <input
+          type="submit"
+          class="px-5 py-2 rounded-md bg-blue-500 ml-3"
+          value="Create User"
+        />
+      </form>
+    </div>
+  </body>
+</html>
